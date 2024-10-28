@@ -1,3 +1,3 @@
 export interface CapacitorApnTokenPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  getApnsToken(): Promise<{ token: string }>;
 }

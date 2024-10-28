@@ -12,11 +12,11 @@ public class CapacitorApnTokenPlugin extends Plugin {
     private CapacitorApnToken implementation = new CapacitorApnToken();
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
+    public void getApnsToken(PluginCall call) {
+  
 
         JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
+        ret.put("token", implementation.echo("Method not implemented on android."));
         call.resolve(ret);
     }
 }

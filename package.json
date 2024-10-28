@@ -1,6 +1,6 @@
 {
   "name": "capacitor-ios-apn-token",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Get iOS APN token",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -27,7 +27,13 @@
   "keywords": [
     "capacitor",
     "plugin",
-    "native"
+    "native",
+    "APN",
+    "notifications",
+    "ios",
+    "clevertap",
+    "Apn token",
+    "clevertaqp sdk"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
