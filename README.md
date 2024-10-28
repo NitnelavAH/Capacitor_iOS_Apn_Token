@@ -36,46 +36,12 @@ if you use @capacitor/push-notifications the code can see like that
     }
 
 ```
-## API
-
-<docgen-index>
-
-* [`getApnsToken()`](#getapnstoken)
-
-</docgen-index>
-
-<docgen-api>
-<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
-
-### getApnsToken()
-
-```typescript
-getApnsToken() => Promise<{ token: string; }>
-```
-
-**Returns:** <code>Promise&lt;{ token: string; }&gt;</code>
-
---------------------
 
 ## Example
 using @capacitor/push-notifications
 ```
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
 import { Capacitor } from '@capacitor/core';
 import { ActionPerformed, PushNotifications, PushNotificationSchema, Token,  } from '@capacitor/push-notifications';
-import { Store } from '@ngrx/store';
-import { environment } from 'src/environments/environment';
-import { DataSaveToken, NotificationER, NotificationType } from '../interfaces/notifications.interface';
-import { AppState } from '../store/app.reducers';
-import { setRateFolioParams } from '../store/actions/rateFolio.action';
-import { NavController } from '@ionic/angular';
-import { setRedirectNotificationParams } from '../store/actions/redirectNotification.action';
-import { setImageNotificationParams } from '../store/actions/imageNotification.action';
-import { setRedirectToTicketsParams } from '../store/actions/redirectToTickets.action';
-import { BehaviorSubject } from 'rxjs';
-import { CleverTap } from '@ionic-native/clevertap/ngx';
 import { Device } from '@capacitor/device';
 import { CapacitorApnToken } from 'capacitor-ios-apn-token';
 
@@ -83,8 +49,6 @@ import { CapacitorApnToken } from 'capacitor-ios-apn-token';
   providedIn: 'root'
 })
 export class NotificationsService {
-
-
 
   constructor(
 
@@ -148,10 +112,27 @@ export class NotificationsService {
     // use fcm token
 
   }
-
 }
+```
+## API
 
+<docgen-index>
+
+* [`getApnsToken()`](#getapnstoken)
+
+</docgen-index>
+
+<docgen-api>
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### getApnsToken()
+
+```typescript
+getApnsToken() => Promise<{ token: string; }>
 ```
 
+**Returns:** <code>Promise&lt;{ token: string; }&gt;</code>
+
+--------------------
 
 </docgen-api>
