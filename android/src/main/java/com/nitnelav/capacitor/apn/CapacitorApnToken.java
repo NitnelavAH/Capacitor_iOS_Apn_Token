@@ -1,0 +1,11 @@
+package com.nitnelav.capacitor.apn;
+
+import android.util.Log;
+
+public class CapacitorApnToken {
+
+    public String echo(String value) {
+        Log.i("Echo", value);
+        return value;
+    }
+}
